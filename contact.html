@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+</head>
+<body>
+    <header>
+        <h1>Mon Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="a-propos.html">a-propos</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Me contacter</h2>
+        <p>Vous avez un projet, une question ou une opportunite à partager? N'hésitez pas à m'écrire!</p>
+        <h2>Formulaire de contact</h2>
+        <form action="#" method="post">
+            <!--Champ Nom-->
+            <label for="nom">Nom complet *</label><br>
+            <input type="text" id="nom" name="nom" placeholder="Ex : jeans.martin" required><br><br>
+            
+            <!-- Champ Email -->
+             <label for="email">Adresse e-mail *</label><br>
+             <input type="email" id="email" name="email" placeholder="Ex : jean.martin@email.com" required><br><br>
+
+             <!-- Champ Sujet (menu déroulant ) -->
+              <label for="sujet">Sujet </label><br>
+              <select id="sujet" name="sujet" required>
+                <option value="">-- Choisissez un  sujet --</option>
+                <option value="projet">Proposition de collaboration</option>
+                <option value="question générale">Question générale</option>
+                <option value="offre de stage">Offre de stage</option>
+                <option value="autre">Autre</option>
+              </select><br><br>
+
+              <!-- Champ Message -->
+               <label for="message">Message *</label><br>
+               <textarea id="message" name="message" placeholder="Ecrivez votre message ici..." required></textarea><br><br>
+
+               <!-- Case RGPD -->
+                <input type="checkbox" id="rgpd" name="rgpd" required>
+                <label for="rgpd">J'accepte que mes données soient utilisée pour répondre à ma demande.</label><br><br>
+
+                <!-- Bouttons -->
+                 <button type="submit">Envoyer le message</button>
+                 <button type="reset">Réinitialiser</button>
+        </form>
+    </main>
+    <footer>
+        <h3>Contacter sur</h3>
+        <strong>Adresse Email:</strong>
+        <a href="mailto:ramazanihassan70@gmail.com">ramazanihassan70@gmail.com</a>
+        <p>&copy; 2026 Mon portfolio - Tous droits reservées</p>
+    </footer>
+</body>
+</html>
